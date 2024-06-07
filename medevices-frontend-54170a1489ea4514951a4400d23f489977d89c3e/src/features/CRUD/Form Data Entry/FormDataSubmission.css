@@ -1,0 +1,44 @@
+.form-submission {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #0059ff;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:hover {
+    border-color: #999;
+}
+
+.form-input:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 175, 233, 0.3);
+}
+
+.form-input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.form-entry {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

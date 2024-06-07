@@ -1,0 +1,13 @@
+.main-page-container {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.all-brands {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

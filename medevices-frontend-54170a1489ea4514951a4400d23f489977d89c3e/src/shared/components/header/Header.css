@@ -1,0 +1,64 @@
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu div {
+    margin-left: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #000;
+}
+
+.login-register-button {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-bottom: 20px;
+}
+
+.login-register-button .link {
+    margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+.login-register-button .link > .MuiButton-root {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.login-register-button .link > .MuiButton-root:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
+

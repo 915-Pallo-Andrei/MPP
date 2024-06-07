@@ -1,0 +1,19 @@
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.all-devices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sort-button {
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
