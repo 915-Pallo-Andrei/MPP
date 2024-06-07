@@ -47,7 +47,8 @@ export function AddBrandPage() {
                 nameInput,
             );
 
-            axios.post('http://localhost:5001/api/addBrand', inputBrand)
+            const URL = 'http://51.20.86.64:5001/api/addBrand'
+            axios.post(URL, inputBrand)
                 .then(response=> {
                     const brandData = response.data;
                     const newBrand = new Brand(brandData.brand_id, brandData.name);

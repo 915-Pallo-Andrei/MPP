@@ -12,7 +12,8 @@ export function BrandCard({givenBrand, removeMethod}: BrandCardPropsType) {
     const devices = useContext(DevicesContext);
     const [deviceCount, setDeviceCount] = useState(0);
     useEffect(() => {
-        axios.get(`http://localhost:5001/api/devicesfor/${givenBrand.getId()}`)
+        const URL =(`http://51.20.86.64:5001/api/devicesfor/${givenBrand.getId()}`)
+        axios.get(URL)
             .then(response => {
                 setDeviceCount(response.data.length);
             })
@@ -27,7 +28,7 @@ export function BrandCard({givenBrand, removeMethod}: BrandCardPropsType) {
 
     const handleRemoveClick = (e: React.MouseEvent) => {
         e.stopPropagation();
-        axios.delete(`http://localhost:5001/api/brands/${givenBrand.getId()}`)
+        axios.delete(`http://51.20.86.64:5001/api/brands/${givenBrand.getId()}`)
             .then(() => {
                 removeMethod(givenBrand.getId());
             })

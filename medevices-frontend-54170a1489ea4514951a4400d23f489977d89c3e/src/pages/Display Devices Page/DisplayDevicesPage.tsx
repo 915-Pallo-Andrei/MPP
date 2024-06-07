@@ -67,7 +67,8 @@ export function DisplayDevicesPage() {
         try {
             const nextPage = page + 1;
             const username = localStorage.getItem('username');
-            axios.get(`http://localhost:5001/api/devicesof/${username}?page=${nextPage}`)
+            const URL =`http://51.20.86.64:5001/api/devicesof/${username}?page=${nextPage}`
+            axios.get(URL)
                 .then((response) => {
                     console.log('Next page of devices fetched:', response.data);
                     const newDevices = response.data.map((deviceData: any) => new Device(deviceData.id, deviceData.name, deviceData.price, deviceData.brand, deviceData.image));
